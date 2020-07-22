@@ -12,15 +12,11 @@ spring:
   application:
     name: cloud-provider-hystrix-order
 
-#ribbon:
-#  ReadTimeout:  5000    #指的是建立连接后从服务器读取到可用资源所用的时间。
-#  ConnectTimeout: 5000  #指的是建立连接所用的时间，适用于网络状况正常的情况下，两端连接所用的时间。
+ribbon:
+  ReadTimeout:  5000    #指的是建立连接后从服务器读取到可用资源所用的时间。
+  ConnectTimeout: 5000  #指的是建立连接所用的时间，适用于网络状况正常的情况下，两端连接所用的时间。
 
 
-
-
-#sadf
-
-#feign:
-#  hystrix:
-#    enabled: true #如果处理自身的容错就开启。开启方式与生产端不一样。开启则hystrix失败
+feign:
+  hystrix:
+    enabled: true #如果处理自身的容错就开启。开启方式与生产端不一样

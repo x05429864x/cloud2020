@@ -15,7 +15,7 @@ import javax.annotation.Resource;
 @RestController
 @Slf4j
 @DefaultProperties(defaultFallback = "payment_Global_FallbackMethod",commandProperties = {
-        @HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds",value = "99000")  //3秒钟以内就是正常的业务逻辑
+        @HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds",value = "6000")  //3秒钟以内就是正常的业务逻辑
 })  //全局的
 public class OrderHystrixController {
 
