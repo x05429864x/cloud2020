@@ -50,7 +50,7 @@ public class PaymentService {
         }
         String serialNumber = IdUtil.simpleUUID();
         int timeNumber = 2000;
-        try { TimeUnit.MILLISECONDS.sleep(timeNumber); }catch (Exception e) {e.printStackTrace();}
+//        try { TimeUnit.MILLISECONDS.sleep(timeNumber); }catch (Exception e) {e.printStackTrace();}
         return Thread.currentThread().getName()+"\t"+"调用成功,流水号："+serialNumber+"  用时:"+timeNumber;
     }
     public String paymentCircuitBreaker_fallback(@PathVariable("id") Integer id){
