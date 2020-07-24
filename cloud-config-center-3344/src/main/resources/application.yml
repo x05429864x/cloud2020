@@ -1,0 +1,23 @@
+server:
+  port: 3344
+spring:
+  application:
+    name: cloud-config-center
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/x05429864x/springcloud-config.git
+          search-paths:
+          - springcloud-config
+          #Authentication is required but no CredentialsProvider has been registered
+          #以上报错添加用户名密码
+          username: x05429864x@sina.com
+          password: daohao1**sB
+      label: master
+
+eureka:
+  client:
+    service-url:
+      defaultZone:  http://localhost:7001/eureka
+
