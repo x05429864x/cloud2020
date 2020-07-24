@@ -29,7 +29,7 @@ spring:
         #- Host=**.atguigu.com
         #- Method=GET
         #- Query=username, \d+ #要有参数名称并且是正整数才能路由
-
+        #远程编辑测试
 
 eureka:
   instance:
